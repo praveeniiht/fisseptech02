@@ -1,0 +1,36 @@
+1. Create two springboot rest applications called service1 and service2
+
+Name of Application : service1
+rest end points
+---------------
+classlevel Mapping "/service1"
+"/test1"   ---  GET --- test1 method of service1 
+
+"/test2"   ---- GET --- test2 method of service1
+
+port: 8082
+
+
+
+
+Name of the Application: service2
+rest end points
+classlevel mapping: "/service2"
+
+"/test1" ----- GET -- test1 method of service2
+"/getTest1"  --- GET -- It should connect to service1 test1 url and display the result.
+port : 8083
+
+upload two springboot projects into github and develop two pipe lines
+
+1. for service1 complete devops pipeline should be in the single project.
+
+2. for service2 it should be developed into three diff jobs and make it deploy.
+
+Test the all rest methods fromt the docker runner containers.
+
+
+
+
+
+ 
